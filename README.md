@@ -23,8 +23,8 @@
 *
 
 ## To DO
-* [ ] Odometry (LIO-SAM &rightarrow; FAST-LIO2)
-* [ ]
+* [ ] Change LiDAR-Odometry (LIO-SAM &rightarrow; FAST-LIO2)
+* [ ] Add Outlier Rejection (e.g. RANSAC)
 
 ## Citation
   ```
