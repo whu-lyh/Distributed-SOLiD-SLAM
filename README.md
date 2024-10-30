@@ -6,7 +6,7 @@
 </div>
 
 ## What is Distributed SOLiD SLAM?
-* Distributed SOLiD SLAM is a Distributed SOLiD-based LiDAR SLAM Framework, which is a modified version of [DiSCO-SLAM](https://github.com/RobustFieldAutonomyLab/DiSCo-SLAM). 
+* Distributed SOLiD SLAM is a Distributed SOLiD-based LiDAR SLAM Framework, which is a modified version of [DiSCo-SLAM](https://github.com/RobustFieldAutonomyLab/DiSCo-SLAM). 
 * Distributed SOLiD SLAM consists of 4 main modules!
   * Place Recognition ([SOLiD](https://github.com/sparolab/solid.git)) 
 
@@ -25,6 +25,9 @@
 ## To DO
 * [ ] Change LiDAR-Odometry (LIO-SAM &rightarrow; FAST-LIO2)
 * [ ] Add Outlier Rejection (e.g. RANSAC)
+
+## Special Thanks
+* We appreciate Prof. [Brendan Englot](https://scholar.google.com/citations?user=Nd6tX_kAAAAJ&hl=ko)'s RobustFieldAutonomyLab, particularly [Yewei Huang](https://scholar.google.com/citations?user=8g3U_tkAAAAJ&hl=ko&oi=sra), for publishing the DiSCo-SLAM.
 
 ## Citation
   ```
