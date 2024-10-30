@@ -23,8 +23,8 @@
 *
 
 ## To DO
-[ ] Odometry (LIO-SAM &rightarrow; FAST-LIO2)
-[ ]
+* [ ] Odometry (LIO-SAM &rightarrow; FAST-LIO2)
+* [ ]
 
 ## Citation
   ```
