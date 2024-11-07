@@ -65,7 +65,7 @@ $ rosbag play (your dataset).bag
 
 ## Utils
 <details>
-<summary>Generate a multi-robot rosbag from a single-robot rosbag using a [[Python file](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/scripts/split_bag.py)]</summary>
+<summary>Generate a multi-robot rosbag from a single-robot rosbag using a [Python](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/scripts/split_bag.py) </summary>
 <div markdown="1">
 	
 	$ python3 split.bag
