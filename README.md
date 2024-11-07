@@ -127,19 +127,14 @@ extrinsicRPY: [0,  1, 0,
 * You can see the results of the Park dataset (i.e. DiSCo SLAM dataset) [here](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/assets/park.mp4)!!
 	* You should modify parameters to fit the Velodyne 16!!
  		* [Extrinsic](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/config/params.yaml)
-   		<details>
-		<summary><a href="https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/src/Distributed-SOLiD-SLAM/config/mapfusion.yaml">SOLiD</a></summary>
-		<div markdown="1">
-			
+		* [SOLiD](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/src/Distributed-SOLiD-SLAM/config/mapfusion.yaml)
+    			```
 			mapfusion:
 			    solid:
 				num_height: 16
 				fov_up: 15.0
 				fov_down: -15.0
-		
-		</div>
-		</details>
- 	
+		 	```
 
 ## To DO
 * [ ] Save Transformed Path
