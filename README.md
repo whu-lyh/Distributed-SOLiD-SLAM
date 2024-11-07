@@ -154,8 +154,5 @@ extrinsicRPY: [0,  1, 0,
 ## Contact
 * Hogyun Kim (hg.kim@inha.edu)
 
-## License
-* For academic usage, the code is released under the BSD 3.0 license. For any commercial purpose, please contact the authors.
-
 ## Special Thanks
 * We appreciate Prof. [Brendan Englot](https://scholar.google.com/citations?user=Nd6tX_kAAAAJ&hl=ko)'s RobustFieldAutonomyLab, particularly [Yewei Huang](https://scholar.google.com/citations?user=8g3U_tkAAAAJ&hl=ko&oi=sra), for publishing the DiSCo-SLAM.
