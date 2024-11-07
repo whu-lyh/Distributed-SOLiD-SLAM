@@ -104,7 +104,7 @@ extrinsicRPY: [0,  1, 0,
 
 ## Utils
 <details>
-<summary>Generate a multi-robot rosbag from a single-robot rosbag using a <a href="https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/scripts/split_bag.py">Python script. (<a href="https://github.com/yeweihuang/single2multi_robot_bag">reference) </a></summary>
+<summary>Generate a multi-robot rosbag from a single-robot rosbag using a <a href="https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/scripts/split_bag.py">Python script. (modified version of <a href="https://github.com/yeweihuang/single2multi_robot_bag">here) </a></summary>
 <div markdown="1">
 	
 	$ python3 split.bag -i (input.bag) -o (output.bag)
