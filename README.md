@@ -136,13 +136,13 @@ extrinsicRPY: [0,  1, 0,
 				fov_down: -15.0
 			```
 
-## To DO
+## :bulb: To DO
 * [ ] Save the transformed paths.
 * [ ] Change the LiDAR-Odometry. (LIO-SAM &rightarrow; FAST-LIO2)
 * [ ] Add outlier rejection (e.g. RANSAC) with PCM.
 * [ ] Add a traversability mapping.
 
-## Citation
+## :ledger: Citation
   ```
 	@article{kim2024narrowing,
 	  title={Narrowing your FOV with SOLiD: Spatially Organized and Lightweight Global Descriptor for FOV-constrained LiDAR Place Recognition},
@@ -152,8 +152,8 @@ extrinsicRPY: [0,  1, 0,
 	  publisher={IEEE}
 	}
   ```
-## Contact
+## :email: Contact
 * Hogyun Kim (hg.kim@inha.edu)
 
-## Special Thanks
+## :clap: Special Thanks
 * We appreciate Prof. [Brendan Englot](https://scholar.google.com/citations?user=Nd6tX_kAAAAJ&hl=ko)'s RobustFieldAutonomyLab, particularly [Yewei Huang](https://scholar.google.com/citations?user=8g3U_tkAAAAJ&hl=ko&oi=sra), for publishing the DiSCo-SLAM.
