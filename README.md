@@ -10,7 +10,7 @@
 * The information exchange between robots is made through ROS-based communication. (More detailed in msg/context_info.msg)
 
 ## What has improved in Distributed SOLiD SLAM?
-*
+* SOLiD, which is a lightweight descriptor enables fast communication between robots.
 
 ## Dependencies
 * Ubuntu 20.04
