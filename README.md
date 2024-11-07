@@ -17,8 +17,11 @@
 * [libnabo 1.0.7](https://github.com/norlab-ulaval/libnabo/tree/1.0.7) 
 
 ## How to use the Distributed SOLiD SLAM?
-* Linux
- ```
+<details>
+<summary>Linux</summary>
+<div markdown="1">
+
+```
     $ cd ~/catkin_ws/src
     $ git clone https://github.com/sparolab/Distributed-SOLiD-SLAM.git
     $ cd ..
@@ -28,8 +31,14 @@
     $ rosbag play (your dataset).bag
   ```
 
-* Docker
- ```
+</div>
+</details>
+
+<details>
+<summary>Docker</summary>
+<div markdown="1">
+
+```
     $ cd ~/catkin_ws/src
     $ git clone https://github.com/sparolab/Distributed-SOLiD-SLAM.git
     $ docker pull cokr6901/distributed_solid_slam
@@ -45,6 +54,9 @@
     $ roslaunch lio_sam run.launch
     $ rosbag play (your dataset).bag
   ```
+
+</div>
+</details>
 
 
 
