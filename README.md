@@ -7,19 +7,8 @@
   <a href=""><img src="https://badges.aleen42.com/src/docker.svg" /></a>
   <br />
   <br />
-  <a href=>Video</a>
-  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-  <a href="">Install</a>
-  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-  <a href="">ROS</a>
-  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-  <a href=>Paper</a>
-  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-  <a href=>Contact Us</a>
-  <br />
-  <br />
 
-   <p align="center">
+  <p align="center">
     <img src="assets/kitti05_3.gif" alt="animated" width="60%" />
   </p>
 
