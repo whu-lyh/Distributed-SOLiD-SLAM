@@ -104,10 +104,10 @@ extrinsicRPY: [0,  1, 0,
 
 ## Utils
 <details>
-<summary>Generate a multi-robot rosbag from a single-robot rosbag using a <a href="https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/scripts/split_bag.py">Python script.</a></summary>
+<summary>Generate a multi-robot rosbag from a single-robot rosbag using a <a href="https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/scripts/split_bag.py">Python script.</a> (reference: <a href="https://github.com/yeweihuang/single2multi_robot_bag">here </a>) </summary>
 <div markdown="1">
 	
-	$ python3 split.bag
+	$ python3 split.bag -i (input.bag) -o (output.bag)
  
 </div>
 </details>
@@ -122,6 +122,19 @@ extrinsicRPY: [0,  1, 0,
  
 </div>
 </details>
+
+## ETC
+* You can see the results of the Park dataset (i.e. DiSCo SLAM dataset) [here](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/assets/park.mp4)!!
+	* You should modify parameters to fit the Velodyne 16!!
+ 		* [Extrinsic](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/config/params.yaml)
+		* [SOLiD](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/src/Distributed-SOLiD-SLAM/config/mapfusion.yaml)
+			```
+			mapfusion:
+			    solid:
+				num_height: 16
+				fov_up: 15.0
+				fov_down: -15.0
+			```
 
 ## To DO
 * [ ] Save Transformed Path
@@ -140,9 +153,6 @@ extrinsicRPY: [0,  1, 0,
   ```
 ## Contact
 * Hogyun Kim (hg.kim@inha.edu)
-
-## License
-* For academic usage, the code is released under the BSD 3.0 license. For any commercial purpose, please contact the authors.
 
 ## Special Thanks
 * We appreciate Prof. [Brendan Englot](https://scholar.google.com/citations?user=Nd6tX_kAAAAJ&hl=ko)'s RobustFieldAutonomyLab, particularly [Yewei Huang](https://scholar.google.com/citations?user=8g3U_tkAAAAJ&hl=ko&oi=sra), for publishing the DiSCo-SLAM.
