@@ -3,6 +3,11 @@
   <a href=""><img src="https://img.shields.io/badge/-C++-blue?logo=cplusplus" /></a>
   <a href=""><img src="https://img.shields.io/badge/-Linux-grey?logo=linux" /></a>
   <a href=""><img src="https://badges.aleen42.com/src/docker.svg" /></a>
+
+   <p align="center">
+    <img src="assests/kitti05_3.gif" alt="animated" width="60%" />
+  </p>
+
 </div>
 
 ## What is Distributed SOLiD SLAM?
@@ -21,13 +26,13 @@
 <div markdown="1">
 
 ```
-    $ cd ~/catkin_ws/src
-    $ git clone https://github.com/sparolab/Distributed-SOLiD-SLAM.git
-    $ cd ..
-    $ catkin_make
-    $ source devel/setup.bash
-    $ roslaunch lio_sam run.launch
-    $ rosbag play (your dataset).bag
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/sparolab/Distributed-SOLiD-SLAM.git
+$ cd ..
+$ catkin_make
+$ source devel/setup.bash
+$ roslaunch lio_sam run.launch
+$ rosbag play (your dataset).bag
   ```
 
 </div>
@@ -66,13 +71,13 @@ $ rosbag play (your dataset).bag
 	
 ```
 
-  extrinsicTrans: [0.0, 0.0, 0.0]
-  extrinsicRot: [-1, 0, 0,
-                  0, 1, 0,
-                  0, 0, -1]
-  extrinsicRPY: [0,  1, 0,
-                 -1, 0, 0,
-                  0, 0, 1]
+extrinsicTrans: [0.0, 0.0, 0.0]
+extrinsicRot: [-1, 0, 0,
+	  0, 1, 0,
+	  0, 0, -1]
+extrinsicRPY: [0,  1, 0,
+	 -1, 0, 0,
+	  0, 0, 1]
 		  
 ```
 	  
@@ -85,14 +90,14 @@ $ rosbag play (your dataset).bag
 	
 	mapfusion:
 	    solid:
-	        knn_feature_dim: 40
-	        max_range: 80
-	        num_sector: 60
-	        num_height: 64
-	        num_nearest_matches: 50
-	        num_match_candidates: 1
-	        fov_up: 2.0
-	        fov_down: -24.8
+		knn_feature_dim: 40
+		max_range: 80
+		num_sector: 60
+		num_height: 64
+		num_nearest_matches: 50
+		num_match_candidates: 1
+		fov_up: 2.0
+		fov_down: -24.8
 
 </div>
 </details>
