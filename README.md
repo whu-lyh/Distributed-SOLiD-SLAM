@@ -64,7 +64,7 @@ $ rosbag play (your dataset).bag
 <summary><a href="https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/config/params.yaml">Extrinsic</a></summary>
 <div markdown="1">
 	
-  # Extrinsics (lidar -> IMU)
+  // Extrinsic (lidar -> IMU)	
   extrinsicTrans: [0.0, 0.0, 0.0]
   extrinsicRot: [-1, 0, 0,
                   0, 1, 0,
