@@ -137,9 +137,10 @@ extrinsicRPY: [0,  1, 0,
 			```
 
 ## To DO
-* [ ] Save Transformed Path
-* [ ] Change LiDAR-Odometry (LIO-SAM &rightarrow; FAST-LIO2)
-* [ ] Add Outlier Rejection (e.g. RANSAC)
+* [ ] Save the transformed paths.
+* [ ] Change the LiDAR-Odometry. (LIO-SAM &rightarrow; FAST-LIO2)
+* [ ] Add outlier rejection (e.g. RANSAC) with PCM.
+* [ ] Add a traversability mapping.
 
 ## Citation
   ```
