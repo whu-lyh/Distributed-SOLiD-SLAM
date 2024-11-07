@@ -7,6 +7,7 @@
 
 ## What is Distributed SOLiD SLAM?
 * Distributed SOLiD SLAM is a Distributed SOLiD-based LiDAR SLAM Framework, which is a modified version of [LIO-SAM](https://github.com/yeweihuang/LIO-SAM) and [DiSCo-SLAM](https://github.com/RobustFieldAutonomyLab/DiSCo-SLAM). 
+* The information exchange between robots is made through ROS-based communication. (More detailed in msg/context_info.msg)
 
 ## What has improved in Distributed SOLiD SLAM?
 *
@@ -58,6 +59,7 @@
 </div>
 </details>
 
+## Parameters
 
 
 ## To DO
