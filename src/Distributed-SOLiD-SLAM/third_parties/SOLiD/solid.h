@@ -1,18 +1,6 @@
 //
 // Created by yewei on 2/27/20.
-
-// This is an unofficial c++ implementation of Scan Context:
-// @ARTICLE{ gkim-2019-ral,
-//     author = {G. {Kim} and B. {Park} and A. {Kim}},
-//     journal = {IEEE Robotics and Automation Letters},
-//     title = {1-Day Learning, 1-Year Localization: Long-Term LiDAR Localization Using Scan Context Image},
-//     year = {2019},
-//     volume = {4},
-//     number = {2},
-//     pages = {1948-1955},
-//     month = {April}
-// }
-// For more information please visit: https://github.com/irapkaist/scancontext
+// Modified by Hogyun Kim on 11/07/24
 
 #ifndef SRC_SOLID_H
 #define SRC_SOLID_H

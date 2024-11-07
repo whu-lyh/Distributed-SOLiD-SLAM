@@ -1733,41 +1733,6 @@ public:
         pubLaserOdometryIncremental.publish(laserOdomIncremental);
     }
 
-void saveTransformedPathData(const nav_msgs::Path& globalPath, const tf::StampedTransform& transform, const std::string& file_path) {
-    std::ofstream file(file_path, std::ios::app); // Append mode
-    if (file.is_open()) {
-        file << "Transformed Path Data:\n";
-        for (const auto& poseStamped : globalPath.poses) {
-            // Position 변환 적용
-            tf::Vector3 position(
-                poseStamped.pose.position.x,
-                poseStamped.pose.position.y,
-                poseStamped.pose.position.z
-            );
-            position = transform * position;
-
-            // Orientation 변환 적용
-            tf::Quaternion orientation;
-            tf::quaternionMsgToTF(poseStamped.pose.orientation, orientation);
-            orientation = transform.getRotation() * orientation;
-
-            // 변환된 position과 orientation을 파일에 기록
-            file << " " << poseStamped.header.stamp
-                 << " " << position.x()
-                 << " " << position.y()
-                 << " " << position.z() 
-                 << " " << orientation.x()
-                 << " " << orientation.y()
-                 << " " << orientation.z()
-                 << " " << orientation.w() << "\n";
-        }
-        file.close();
-        ROS_INFO("Transformed path data has been saved to file.");
-    } else {
-        ROS_WARN("Failed to open file to save transformed path data.");
-    }
-}
-
     void publishFrames()
     {
         if (cloudKeyPoses3D->points.empty())
@@ -1800,64 +1765,57 @@ void saveTransformedPathData(const nav_msgs::Path& globalPath, const tf::Stamped
             globalPath.header.stamp = timeLaserInfoStamp;
             globalPath.header.frame_id = robot_id + "/" + odometryFrame;
             pubPath.publish(globalPath);
-            savePathToFile(globalPath, robot_id);
+            // TODO
+            // savePathToFile(globalPath, robot_id);
         }
     }
 };
 
-void savePathToFile(const nav_msgs::Path& globalPath, const std::string& robot_id)
-{
-    // 파일 이름 설정
-    std::string filename = "/home/test_ws/src/path/" + robot_id + "_path.txt";
+// void savePathToFile(const nav_msgs::Path& globalPath, const std::string& robot_id)
+// {
+//     std::string filename = "/home/test_ws/src/path/" + robot_id + "_path.txt";
     
-    // 파일 열기
-    std::ofstream outfile(filename);
-    if (!outfile.is_open())
-    {
-        ROS_ERROR("Failed to open file: %s", filename.c_str());
-        return;
-    }
+//     std::ofstream outfile(filename);
+//     if (!outfile.is_open())
+//     {
+//         ROS_ERROR("Failed to open file: %s", filename.c_str());
+//         return;
+//     }
 
-    // 경로 데이터를 KITTI format으로 파일에 기록
-    for (const auto& pose : globalPath.poses)
-    {
-        // 쿼터니언 -> 회전 행렬 변환
-        tf::Quaternion q(
-            pose.pose.orientation.x,
-            pose.pose.orientation.y,
-            pose.pose.orientation.z,
-            pose.pose.orientation.w
-        );
+//     for (const auto& pose : globalPath.poses)
+//     {
+//         tf::Quaternion q(
+//             pose.pose.orientation.x,
+//             pose.pose.orientation.y,
+//             pose.pose.orientation.z,
+//             pose.pose.orientation.w
+//         );
 
-        tf::Matrix3x3 rotationMatrix(q);
+//         tf::Matrix3x3 rotationMatrix(q);
 
-        // 회전 행렬 요소 추출
-        double r11 = rotationMatrix[0][0];
-        double r12 = rotationMatrix[0][1];
-        double r13 = rotationMatrix[0][2];
-        double r21 = rotationMatrix[1][0];
-        double r22 = rotationMatrix[1][1];
-        double r23 = rotationMatrix[1][2];
-        double r31 = rotationMatrix[2][0];
-        double r32 = rotationMatrix[2][1];
-        double r33 = rotationMatrix[2][2];
+//         double r11 = rotationMatrix[0][0];
+//         double r12 = rotationMatrix[0][1];
+//         double r13 = rotationMatrix[0][2];
+//         double r21 = rotationMatrix[1][0];
+//         double r22 = rotationMatrix[1][1];
+//         double r23 = rotationMatrix[1][2];
+//         double r31 = rotationMatrix[2][0];
+//         double r32 = rotationMatrix[2][1];
+//         double r33 = rotationMatrix[2][2];
 
-        // 위치 좌표
-        double tx = pose.pose.position.x;
-        double ty = pose.pose.position.y;
-        double tz = pose.pose.position.z;
+//         double tx = pose.pose.position.x;
+//         double ty = pose.pose.position.y;
+//         double tz = pose.pose.position.z;
 
-        // KITTI 형식으로 3x4 행렬을 기록
-        outfile << pose.header.stamp.toNSec() << " "
-                << r11 << " " << r12 << " " << r13 << " " << tx << " "
-                << r21 << " " << r22 << " " << r23 << " " << ty << " "
-                << r31 << " " << r32 << " " << r33 << " " << tz << "\n";
-    }
+//         outfile << pose.header.stamp.toNSec() << " "
+//                 << r11 << " " << r12 << " " << r13 << " " << tx << " "
+//                 << r21 << " " << r22 << " " << r23 << " " << ty << " "
+//                 << r31 << " " << r32 << " " << r33 << " " << tz << "\n";
+//     }
 
-    // 파일 닫기
-    outfile.close();
-    // ROS_INFO("Path saved in KITTI format to %s", filename.c_str());
-}
+//     outfile.close();
+//     // ROS_INFO("Path saved in KITTI format to %s", filename.c_str());
+// }
 
 
 int main(int argc, char** argv)
