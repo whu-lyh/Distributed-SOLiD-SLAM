@@ -10,12 +10,12 @@
 
 </div>
 
-## What is Distributed SOLiD SLAM?
+## :open_file_folder: What is Distributed SOLiD SLAM?
 * Distributed SOLiD SLAM is a Distributed SOLiD-based LiDAR SLAM Framework, which is a modified version of [LIO-SAM](https://github.com/yeweihuang/LIO-SAM) and [DiSCo-SLAM](https://github.com/RobustFieldAutonomyLab/DiSCo-SLAM). ([Scan Context](https://github.com/gisbi-kim/scancontext.git) &rightarrow; [SOLiD](https://github.com/sparolab/solid.git))
 * The information exchange between robots is made through ROS-based communication. (More detailed in [here](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/msg/context_info.msg)!!)
 * SOLiD, which is a lightweight descriptor enables fast communication between robots.
 
-## Dependencies
+## :package: Dependencies
 * Ubuntu 20.04
 * [GTSAM (Develop version)](https://github.com/borglab/gtsam.git)
 * [libnabo 1.0.7](https://github.com/norlab-ulaval/libnabo/tree/1.0.7) 
