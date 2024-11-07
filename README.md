@@ -17,7 +17,36 @@
 * [libnabo 1.0.7](https://github.com/norlab-ulaval/libnabo/tree/1.0.7) 
 
 ## How to use the Distributed SOLiD SLAM?
-*
+* Linux
+ ```
+    $ cd ~/catkin_ws/src
+    $ git clone https://github.com/sparolab/Distributed-SOLiD-SLAM.git
+    $ cd ..
+    $ catkin_make
+    $ source devel/setup.bash
+    $ roslaunch lio_sam run.launch
+    $ rosbag play (your dataset).bag
+  ```
+
+* Docker
+ ```
+    $ cd ~/catkin_ws/src
+    $ git clone https://github.com/sparolab/Distributed-SOLiD-SLAM.git
+    $ docker pull cokr6901/distributed_solid_slam
+    $ docker run --privileged --gpus all \
+	-it --name distributed_solid_slam --ipc=host --shm-size=512M \
+	--device=/dev/video0:/dev/video0 -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
+	-e DISPLAY=unix$DISPLAY -v /root/.Xauthority:/root/.Xauthority \
+	--env="QT_X11_NO_MITSHM=1" \
+	-v ~/catkin_ws/src/:/home/test_ws/src -v (your dataset folder path)/:/home/test_ws/storage cokr6901/distributed_solid_slam:latest
+    $ cd /home/test_ws/
+    $ catkin_make
+    $ source devel/setup.bash
+    $ roslaunch lio_sam run.launch
+    $ rosbag play (your dataset).bag
+  ```
+
+
 
 ## To DO
 * [ ] Change LiDAR-Odometry (LIO-SAM &rightarrow; FAST-LIO2)
