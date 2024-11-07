@@ -20,7 +20,7 @@
 * [GTSAM (Develop version)](https://github.com/borglab/gtsam.git)
 * [libnabo 1.0.7](https://github.com/norlab-ulaval/libnabo/tree/1.0.7) 
 
-## :gear: How to use the Distributed SOLiD SLAM?
+## :package: How to use the Distributed SOLiD SLAM?
 <details>
 <summary>Linux</summary>
 <div markdown="1">
@@ -64,7 +64,7 @@ $ rosbag play (your dataset).bag
 </div>
 </details>
 
-## Parameters
+## :gear: Parameters
 <details>
 <summary><a href="https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/config/params.yaml">Extrinsic (LiDAR -> IMU) </a></summary>
 <div markdown="1">
@@ -102,7 +102,7 @@ extrinsicRPY: [0,  1, 0,
 </div>
 </details>
 
-## Utils
+## :gear: Utils
 <details>
 <summary>Generate a multi-robot rosbag from a single-robot rosbag using a <a href="https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/scripts/split_bag.py">Python script.</a> (reference: <a href="https://github.com/yeweihuang/single2multi_robot_bag">here </a>) </summary>
 <div markdown="1">
@@ -123,7 +123,7 @@ extrinsicRPY: [0,  1, 0,
 </div>
 </details>
 
-## ETC
+## :gear: ETC
 * You can see the results of the Park dataset (i.e. DiSCo SLAM dataset) [here](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/assets/park.mp4)!!
 	* You should modify parameters to fit the Robot and LiDAR!!
  		* [Extrinsic](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/config/params.yaml) (For Robot)
