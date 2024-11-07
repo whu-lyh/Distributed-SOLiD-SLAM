@@ -38,21 +38,23 @@
 <div markdown="1">
 
 ```
-    $ cd ~/catkin_ws/src
-    $ git clone https://github.com/sparolab/Distributed-SOLiD-SLAM.git
-    $ docker pull cokr6901/distributed_solid_slam
-    $ docker run --privileged --gpus all \
-	-it --name distributed_solid_slam --ipc=host --shm-size=512M \
-	--device=/dev/video0:/dev/video0 -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
-	-e DISPLAY=unix$DISPLAY -v /root/.Xauthority:/root/.Xauthority \
-	--env="QT_X11_NO_MITSHM=1" \
-	-v ~/catkin_ws/src/:/home/test_ws/src -v (your dataset folder path)/:/home/test_ws/storage cokr6901/distributed_solid_slam:latest
-    $ cd /home/test_ws/
-    $ catkin_make
-    $ source devel/setup.bash
-    $ roslaunch lio_sam run.launch
-    $ rosbag play (your dataset).bag
-  ```
+
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/sparolab/Distributed-SOLiD-SLAM.git
+$ docker pull cokr6901/distributed_solid_slam
+$ docker run --privileged --gpus all \
+-it --name distributed_solid_slam --ipc=host --shm-size=512M \
+--device=/dev/video0:/dev/video0 -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
+-e DISPLAY=unix$DISPLAY -v /root/.Xauthority:/root/.Xauthority \
+--env="QT_X11_NO_MITSHM=1" \
+-v ~/catkin_ws/src/:/home/test_ws/src -v (your dataset folder path)/:/home/test_ws/storage cokr6901/distributed_solid_slam:latest
+$ cd /home/test_ws/
+$ catkin_make
+$ source devel/setup.bash
+$ roslaunch lio_sam run.launch
+$ rosbag play (your dataset).bag
+
+```
 
 </div>
 </details>
@@ -62,18 +64,25 @@
 * SOLiD
 
 ## Utils
-* Generate a multi-robot rosbag from a single-robot rosbag using a Python file. (scripts/split_bag.py)
+<details>
+<summary>Generate a multi-robot rosbag from a single-robot rosbag using a Python file. (scripts/split_bag.py)</summary>
+<div markdown="1">
   ```
 	$ python3 split.bag
   ```
+</div>
+</details>
+
 <details>
 <summary>You can edit these lines.</summary>
 <div markdown="1">
-  ```
-	topics = ['/points_raw', '/imu_raw', '/gps/fix']       # Rostopic names
-	split_places = [90, 180, 290]		                  # 0(start)-90-180-290(final)
-	robot_names =  ['/jackal0', '/jackal1', '/jackal2']    # Robot names (jackal0:0-90 / jackal1:90-180 / jackal2:180-290)
-  ```
+```
+
+topics = ['/points_raw', '/imu_raw', '/gps/fix']       # Rostopic names
+split_places = [90, 180, 290]		                  # 0(start)-90-180-290(final)
+robot_names =  ['/jackal0', '/jackal1', '/jackal2']    # Robot names (jackal0:0-90 / jackal1:90-180 / jackal2:180-290)
+
+```
 </div>
 </details>
 
