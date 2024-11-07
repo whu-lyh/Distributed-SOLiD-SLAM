@@ -10,7 +10,7 @@ Panels:
         - /Mapping 21/Map (global)_21
         - /Mapping 21/Path (global)_21
       Splitter Ratio: 0.5600000023841858
-    Tree Height: 707
+    Tree Height: 252
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Views
@@ -641,8 +641,8 @@ Visualization Manager:
         - Alpha: 1
           Autocompute Intensity Bounds: true
           Autocompute Value Bounds:
-            Max Value: 42.10515594482422
-            Min Value: -2.7297005653381348
+            Max Value: 9.90521240234375
+            Min Value: -21.981916427612305
             Value: true
           Axis: Z
           Channel Name: intensity
@@ -788,7 +788,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 1479.4708251953125
+      Distance: 662.0885009765625
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -796,9 +796,9 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 284.2794494628906
-        Y: 121.18287658691406
-        Z: 0.07612870633602142
+        X: 75.84815979003906
+        Y: -21.417821884155273
+        Z: 0.08241836726665497
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
@@ -806,7 +806,7 @@ Visualization Manager:
       Near Clip Distance: 0.009999999776482582
       Pitch: 1.5697963237762451
       Target Frame: base_link
-      Yaw: 2.165073871612549
+      Yaw: 3.1650757789611816
     Saved: ~
 Window Geometry:
   Displays:
