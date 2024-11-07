@@ -62,7 +62,17 @@
 * SOLiD
 
 ## Utils
-* Generate a multi-robot rosbag from single-robot rosbag
+* Generate a multi-robot rosbag from a single-robot rosbag using a Python file. (scripts/split_bag.py)
+  ```
+	$ python3 split.bag
+  ```
+* You can edit these lines.
+  ```
+	topics = ['/points_raw', '/imu_raw', '/gps/fix']       # Rostopic names
+	split_places = [90, 180, 290]		               # 0(start)-90-180-290(final)
+	robot_names =  ['/jackal0', '/jackal1', '/jackal2']    # Robot names (jackal0:0-90 / jackal1:90-180 / jackal2:180-290)
+  ```
+
 
 ## To DO
 * [ ] Save Transformed Path
