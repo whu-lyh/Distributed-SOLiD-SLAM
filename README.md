@@ -58,8 +58,11 @@
 </details>
 
 ## Parameters
+* Extrinsic
+* SOLiD
 
-## Generate a multi-robot rosbag from single-robot rosbag
+## Utils
+* Generate a multi-robot rosbag from single-robot rosbag
 
 ## To DO
 * [ ] Save Transformed Path
