@@ -5,7 +5,7 @@
   <a href=""><img src="https://badges.aleen42.com/src/docker.svg" /></a>
 
    <p align="center">
-    <img src="assests/kitti05_3.gif" alt="animated" width="60%" />
+    <img src="assets/kitti05_3.gif" alt="animated" width="60%" />
   </p>
 
 </div>
