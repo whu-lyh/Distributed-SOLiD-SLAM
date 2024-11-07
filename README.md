@@ -60,8 +60,19 @@ $ rosbag play (your dataset).bag
 </details>
 
 ## Parameters
-* Extrinsic
-* SOLiD
+<details>
+<summary><a href="https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/config/params.yaml">Extrinsic</a></summary>
+<div markdown="1">
+ 	
+</div>
+</details>
+
+<details>
+<summary><a href="https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/src/Distributed-SOLiD-SLAM/config/mapfusion.yaml">SOLiD</a></summary>
+<div markdown="1">
+ 	
+</div>
+</details>
 
 ## Utils
 <details>
