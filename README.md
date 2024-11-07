@@ -63,14 +63,34 @@ $ rosbag play (your dataset).bag
 <details>
 <summary><a href="https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/config/params.yaml">Extrinsic</a></summary>
 <div markdown="1">
- 	
+	
+  # Extrinsics (lidar -> IMU)
+  extrinsicTrans: [0.0, 0.0, 0.0]
+  extrinsicRot: [-1, 0, 0,
+                  0, 1, 0,
+                  0, 0, -1]
+  extrinsicRPY: [0,  1, 0,
+                 -1, 0, 0,
+                  0, 0, 1]
+
 </div>
 </details>
 
 <details>
 <summary><a href="https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/src/Distributed-SOLiD-SLAM/config/mapfusion.yaml">SOLiD</a></summary>
 <div markdown="1">
- 	
+	
+	mapfusion:
+	    solid:
+	        knn_feature_dim: 40
+	        max_range: 80
+	        num_sector: 60
+	        num_height: 64
+	        num_nearest_matches: 50
+	        num_match_candidates: 1
+	        fov_up: 2.0
+	        fov_down: -24.8
+
 </div>
 </details>
 
