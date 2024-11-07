@@ -64,9 +64,6 @@
 * [ ] Change LiDAR-Odometry (LIO-SAM &rightarrow; FAST-LIO2)
 * [ ] Add Outlier Rejection (e.g. RANSAC)
 
-## Special Thanks
-* We appreciate Prof. [Brendan Englot](https://scholar.google.com/citations?user=Nd6tX_kAAAAJ&hl=ko)'s RobustFieldAutonomyLab, particularly [Yewei Huang](https://scholar.google.com/citations?user=8g3U_tkAAAAJ&hl=ko&oi=sra), for publishing the DiSCo-SLAM.
-
 ## Citation
   ```
 	@article{kim2024narrowing,
@@ -82,3 +79,21 @@
 
 ## License
 * For academic usage, the code is released under the BSD 3.0 license. For any commercial purpose, please contact the authors.
+
+## Special Thanks
+* We appreciate Prof. [Brendan Englot](https://scholar.google.com/citations?user=Nd6tX_kAAAAJ&hl=ko)'s RobustFieldAutonomyLab, particularly [Yewei Huang](https://scholar.google.com/citations?user=8g3U_tkAAAAJ&hl=ko&oi=sra), for publishing the DiSCo-SLAM.
+* Citation
+	```
+	@article{huang2021disco,
+	  title={DiSCo-SLAM: Distributed scan context-enabled multi-robot lidar slam with two-stage global-local graph optimization},
+	  author={Huang, Yewei and Shan, Tixiao and Chen, Fanfei and Englot, Brendan},
+	  journal={IEEE Robotics and Automation Letters},
+	  volume={7},
+	  number={2},
+	  pages={1150--1157},
+	  year={2021},
+	  publisher={IEEE}
+	}
+	```
+
+
