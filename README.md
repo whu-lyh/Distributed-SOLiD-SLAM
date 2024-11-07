@@ -102,7 +102,7 @@ extrinsicRPY: [0,  1, 0,
 <summary>Generate a multi-robot rosbag from a single-robot rosbag using a <a href="https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/scripts/split_bag.py">Python script.</a></summary>
 <div markdown="1">
 	
-$ python3 split.bag
+	$ python3 split.bag
  
 </div>
 </details>
@@ -111,9 +111,9 @@ $ python3 split.bag
 <summary>You can edit these lines.</summary>
 <div markdown="1">
 	
-topics = ['/points_raw', '/imu_raw', '/gps/fix']       # Rostopic names
-split_places = [90, 180, 290]		                  # 0(start)-90-180-290(final)
-robot_names =  ['/jackal0', '/jackal1', '/jackal2']    # Robot names (jackal0:0-90 / jackal1:90-180 / jackal2:180-290)
+	topics = ['/points_raw', '/imu_raw', '/gps/fix']       # Rostopic names
+	split_places = [90, 180, 290]		                  # 0(start)-90-180-290(final)
+	robot_names =  ['/jackal0', '/jackal1', '/jackal2']    # Robot names (jackal0:0-90 / jackal1:90-180 / jackal2:180-290)
  
 </div>
 </details>
