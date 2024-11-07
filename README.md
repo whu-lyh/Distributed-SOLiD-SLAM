@@ -7,7 +7,7 @@
 
 ## What is Distributed SOLiD SLAM?
 * Distributed SOLiD SLAM is a Distributed SOLiD-based LiDAR SLAM Framework, which is a modified version of [LIO-SAM](https://github.com/yeweihuang/LIO-SAM) and [DiSCo-SLAM](https://github.com/RobustFieldAutonomyLab/DiSCo-SLAM). ([Scan Context](https://github.com/gisbi-kim/scancontext.git) &rightarrow; [SOLiD](https://github.com/sparolab/solid.git))
-* The information exchange between robots is made through ROS-based communication. (More detailed in msg/context_info.msg)
+* The information exchange between robots is made through ROS-based communication. (More detailed in [here](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/msg/context_info.msg)!!)
 * SOLiD, which is a lightweight descriptor enables fast communication between robots.
 
 ## Dependencies
@@ -60,12 +60,46 @@ $ rosbag play (your dataset).bag
 </details>
 
 ## Parameters
-* Extrinsic
-* SOLiD
+<details>
+<summary><a href="https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/config/params.yaml">Extrinsic (LiDAR -> IMU) </a></summary>
+<div markdown="1">
+	
+```
+
+  extrinsicTrans: [0.0, 0.0, 0.0]
+  extrinsicRot: [-1, 0, 0,
+                  0, 1, 0,
+                  0, 0, -1]
+  extrinsicRPY: [0,  1, 0,
+                 -1, 0, 0,
+                  0, 0, 1]
+		  
+```
+	  
+</div>
+</details>
+
+<details>
+<summary><a href="https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/src/Distributed-SOLiD-SLAM/config/mapfusion.yaml">SOLiD</a></summary>
+<div markdown="1">
+	
+	mapfusion:
+	    solid:
+	        knn_feature_dim: 40
+	        max_range: 80
+	        num_sector: 60
+	        num_height: 64
+	        num_nearest_matches: 50
+	        num_match_candidates: 1
+	        fov_up: 2.0
+	        fov_down: -24.8
+
+</div>
+</details>
 
 ## Utils
 <details>
-<summary>Generate a multi-robot rosbag from a single-robot rosbag using a Python file. (scripts/split_bag.py)</summary>
+<summary>Generate a multi-robot rosbag from a single-robot rosbag using a <a href="https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/scripts/split_bag.py">Python script.</a></summary>
 <div markdown="1">
 	
 	$ python3 split.bag
