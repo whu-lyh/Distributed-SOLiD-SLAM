@@ -125,9 +125,9 @@ extrinsicRPY: [0,  1, 0,
 
 ## ETC
 * You can see the results of the Park dataset (i.e. DiSCo SLAM dataset) [here](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/assets/park.mp4)!!
-	* You should modify parameters to fit the Velodyne 16!!
- 		* [Extrinsic](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/config/params.yaml)
-		* [SOLiD](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/src/Distributed-SOLiD-SLAM/config/mapfusion.yaml)
+	* You should modify parameters to fit the Robot and LiDAR!!
+ 		* [Extrinsic](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/config/params.yaml) (For Robot)
+		* [SOLiD](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/src/Distributed-SOLiD-SLAM/config/mapfusion.yaml) (For VLP-16)
 			```
 			mapfusion:
 			    solid:
