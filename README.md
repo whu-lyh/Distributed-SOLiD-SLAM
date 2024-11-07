@@ -7,17 +7,14 @@
 
 ## What is Distributed SOLiD SLAM?
 * Distributed SOLiD SLAM is a Distributed SOLiD-based LiDAR SLAM Framework, which is a modified version of [DiSCo-SLAM](https://github.com/RobustFieldAutonomyLab/DiSCo-SLAM). 
-* Distributed SOLiD SLAM consists of 4 main modules!
-  * Place Recognition ([SOLiD](https://github.com/sparolab/solid.git)) 
 
 ## What has improved in Distributed SOLiD SLAM?
 *
 
 ## Dependencies
 * Ubuntu 20.04
-* GTSAM (Develop version)
-* SOLiD
-  * libnabo 1.0.7 
+* [GTSAM (Develop version)](https://github.com/borglab/gtsam.git)
+* [libnabo 1.0.7](https://github.com/norlab-ulaval/libnabo/tree/1.0.7) 
 
 ## How to use the Distributed SOLiD SLAM?
 *
