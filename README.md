@@ -128,12 +128,15 @@ extrinsicRPY: [0,  1, 0,
 	* You should modify parameters to fit the Velodyne 16!!
  		* [Extrinsic](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/config/params.yaml)
 		* [SOLiD](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/src/Distributed-SOLiD-SLAM/config/mapfusion.yaml)
+    			
     			```
+    
 			mapfusion:
 			    solid:
 				num_height: 16
 				fov_up: 15.0
 				fov_down: -15.0
+    
 		 	```
 
 ## To DO
