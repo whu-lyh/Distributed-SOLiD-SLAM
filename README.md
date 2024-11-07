@@ -121,7 +121,7 @@ extrinsicRPY: [0,  1, 0,
 <div markdown="1">
 	
 	topics = ['/points_raw', '/imu_raw', '/gps/fix']       # Rostopic names
-	split_places = [90, 180, 290]		                  # 0(start)-90-180-290(final)
+	split_places = [90, 180, 290]		               # 0(start)-90-180-290(final)
 	robot_names =  ['/jackal0', '/jackal1', '/jackal2']    # Robot names (jackal0:0-90 / jackal1:90-180 / jackal2:180-290)
  
 </div>
