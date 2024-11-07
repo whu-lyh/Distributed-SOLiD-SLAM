@@ -1,8 +1,23 @@
 <div align="center">
   <h1>Distributed SOLiD SLAM</h1>
   <a href=""><img src="https://img.shields.io/badge/-C++-blue?logo=cplusplus" /></a>
-  <a href=""><img src="https://img.shields.io/badge/-Linux-grey?logo=linux" /></a>
+  <a href=""><img src="https://img.shields.io/badge/Python-3670A0?logo=python&logoColor=ffdd54" /></a>
+  <a href=""><img src="https://img.shields.io/badge/ROS-Noetic-blue" /></a>
+  <a href=""><img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black" /></a>
   <a href=""><img src="https://badges.aleen42.com/src/docker.svg" /></a>
+  <br />
+  <br />
+  <a href=>Video</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="">Install</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="">ROS</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href=>Paper</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href=>Contact Us</a>
+  <br />
+  <br />
 
    <p align="center">
     <img src="assets/kitti05_3.gif" alt="animated" width="60%" />
