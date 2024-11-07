@@ -20,7 +20,7 @@
 * [GTSAM (Develop version)](https://github.com/borglab/gtsam.git)
 * [libnabo 1.0.7](https://github.com/norlab-ulaval/libnabo/tree/1.0.7) 
 
-## How to use the Distributed SOLiD SLAM?
+## :gear: How to use the Distributed SOLiD SLAM?
 <details>
 <summary>Linux</summary>
 <div markdown="1">
