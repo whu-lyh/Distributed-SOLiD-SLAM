@@ -143,8 +143,8 @@ extrinsicRPY: [0,  1, 0,
 ## :bulb: To DO
 * [ ] Save the transformed paths.
 * [ ] Change the LiDAR-Odometry. (LIO-SAM &rightarrow; FAST-LIO2)
-* [ ] Add outlier rejection (e.g. RANSAC).
-* [ ] Add a traversability mapping.
+* [ ] Add the outlier rejection. (e.g. RANSAC)
+* [ ] Add the traversability mapping.
 
 ## :ledger: Citation
   ```
