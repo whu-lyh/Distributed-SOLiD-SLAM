@@ -1,10 +1,14 @@
 <div align="center">
   <h1>Distributed SOLiD SLAM</h1>
   <a href=""><img src="https://img.shields.io/badge/-C++-blue?logo=cplusplus" /></a>
-  <a href=""><img src="https://img.shields.io/badge/-Linux-grey?logo=linux" /></a>
+  <a href=""><img src="https://img.shields.io/badge/Python-3670A0?logo=python&logoColor=ffdd54" /></a>
+  <a href=""><img src="https://img.shields.io/badge/ROS-Noetic-blue" /></a>
+  <a href=""><img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black" /></a>
   <a href=""><img src="https://badges.aleen42.com/src/docker.svg" /></a>
+  <br />
+  <br />
 
-   <p align="center">
+  <p align="center">
     <img src="assets/kitti05_3.gif" alt="animated" width="60%" />
   </p>
 
@@ -20,7 +24,7 @@
 * [GTSAM (Develop version)](https://github.com/borglab/gtsam.git)
 * [libnabo 1.0.7](https://github.com/norlab-ulaval/libnabo/tree/1.0.7) 
 
-## :gear: How to use the Distributed SOLiD SLAM?
+## :package: How to use the Distributed SOLiD SLAM?
 <details>
 <summary>Linux</summary>
 <div markdown="1">
@@ -64,7 +68,7 @@ $ rosbag play (your dataset).bag
 </div>
 </details>
 
-## Parameters
+## :gear: Parameters
 <details>
 <summary><a href="https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/config/params.yaml">Extrinsic (LiDAR -> IMU) </a></summary>
 <div markdown="1">
@@ -102,7 +106,7 @@ extrinsicRPY: [0,  1, 0,
 </div>
 </details>
 
-## Utils
+## :gear: Utils
 <details>
 <summary>Generate a multi-robot rosbag from a single-robot rosbag using a <a href="https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/scripts/split_bag.py">Python script.</a> (reference: <a href="https://github.com/yeweihuang/single2multi_robot_bag">here </a>) </summary>
 <div markdown="1">
@@ -117,13 +121,13 @@ extrinsicRPY: [0,  1, 0,
 <div markdown="1">
 	
 	topics = ['/points_raw', '/imu_raw', '/gps/fix']       # Rostopic names
-	split_places = [90, 180, 290]		                  # 0(start)-90-180-290(final)
+	split_places = [90, 180, 290]		               # 0(start)-90-180-290(final)
 	robot_names =  ['/jackal0', '/jackal1', '/jackal2']    # Robot names (jackal0:0-90 / jackal1:90-180 / jackal2:180-290)
  
 </div>
 </details>
 
-## ETC
+## :gear: ETC
 * You can see the results of the Park dataset (i.e. DiSCo SLAM dataset) [here](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/assets/park.mp4)!!
 	* You should modify parameters to fit the Robot and LiDAR!!
  		* [Extrinsic](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/config/params.yaml) (For Robot)
@@ -136,13 +140,13 @@ extrinsicRPY: [0,  1, 0,
 				fov_down: -15.0
 			```
 
-## To DO
+## :bulb: To DO
 * [ ] Save the transformed paths.
 * [ ] Change the LiDAR-Odometry. (LIO-SAM &rightarrow; FAST-LIO2)
-* [ ] Add outlier rejection (e.g. RANSAC) with PCM.
-* [ ] Add a traversability mapping.
+* [ ] Add the outlier rejection. (e.g. RANSAC)
+* [ ] Add the traversability mapping.
 
-## Citation
+## :ledger: Citation
   ```
 	@article{kim2024narrowing,
 	  title={Narrowing your FOV with SOLiD: Spatially Organized and Lightweight Global Descriptor for FOV-constrained LiDAR Place Recognition},
@@ -152,8 +156,8 @@ extrinsicRPY: [0,  1, 0,
 	  publisher={IEEE}
 	}
   ```
-## Contact
+## :email: Contact
 * Hogyun Kim (hg.kim@inha.edu)
 
-## Special Thanks
+## :clap: Special Thanks
 * We appreciate Prof. [Brendan Englot](https://scholar.google.com/citations?user=Nd6tX_kAAAAJ&hl=ko)'s RobustFieldAutonomyLab, particularly [Yewei Huang](https://scholar.google.com/citations?user=8g3U_tkAAAAJ&hl=ko&oi=sra), for publishing the DiSCo-SLAM.
