@@ -18,7 +18,7 @@
 * We have released a modified version that changed LIO-SAM to LIORF in [here](https://github.com/sparolab/Distributed-SOLiD-SLAM/tree/liorf)!!
 	```
 	$ git clone --branch liorf https://github.com/sparolab/Distributed-SOLiD-SLAM.git
-	  ```
+	```
 
 ## :open_file_folder: What is Distributed SOLiD SLAM?
 * Distributed SOLiD SLAM is a Distributed SOLiD-based LiDAR SLAM Framework, which is a modified version of [LIO-SAM](https://github.com/yeweihuang/LIO-SAM) and [DiSCo-SLAM](https://github.com/RobustFieldAutonomyLab/DiSCo-SLAM). ([Scan Context](https://github.com/gisbi-kim/scancontext.git) &rightarrow; [SOLiD](https://github.com/sparolab/solid.git))
