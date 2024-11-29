@@ -164,6 +164,7 @@ extrinsicRPY: [0,  1, 0,
   ```
 ## :email: Contact
 * Hogyun Kim (hg.kim@inha.edu)
+* Juwon Kim (lambertkim@naver.com)
 
 ## :clap: Special Thanks
 * We appreciate Prof. [Brendan Englot](https://scholar.google.com/citations?user=Nd6tX_kAAAAJ&hl=ko)'s RobustFieldAutonomyLab, particularly [Yewei Huang](https://scholar.google.com/citations?user=8g3U_tkAAAAJ&hl=ko&oi=sra), for publishing the DiSCo-SLAM.
