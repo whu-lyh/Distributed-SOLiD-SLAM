@@ -15,7 +15,7 @@
 </div>
 
 ## :newspaper: News
-* We have released a modified version that changed LIO-SAM to LIORF in [here](https://github.com/sparolab/Distributed-SOLiD-SLAM/tree/liorf)!!
+* We release a modified version that changed LIO-SAM to LIORF in [here](https://github.com/sparolab/Distributed-SOLiD-SLAM/tree/liorf)!!
 	```
 	$ git clone --branch liorf https://github.com/sparolab/Distributed-SOLiD-SLAM.git
 	```
