@@ -14,6 +14,12 @@
 
 </div>
 
+## :newspaper: News
+* We release a modified version that changed LIO-SAM to LIORF in [here](https://github.com/sparolab/Distributed-SOLiD-SLAM/tree/liorf)!!
+	```
+	$ git clone --branch liorf https://github.com/sparolab/Distributed-SOLiD-SLAM.git
+	```
+
 ## :open_file_folder: What is Distributed SOLiD SLAM?
 * Distributed SOLiD SLAM is a Distributed SOLiD-based LiDAR SLAM Framework, which is a modified version of [LIO-SAM](https://github.com/yeweihuang/LIO-SAM) and [DiSCo-SLAM](https://github.com/RobustFieldAutonomyLab/DiSCo-SLAM). ([Scan Context](https://github.com/gisbi-kim/scancontext.git) &rightarrow; [SOLiD](https://github.com/sparolab/solid.git))
 * The information exchange between robots is made through ROS-based communication. (More detailed in [here](https://github.com/sparolab/Distributed-SOLiD-SLAM/blob/main/msg/context_info.msg)!!)
@@ -158,6 +164,7 @@ extrinsicRPY: [0,  1, 0,
   ```
 ## :email: Contact
 * Hogyun Kim (hg.kim@inha.edu)
+* Juwon Kim (lambertkim@naver.com)
 
 ## :clap: Special Thanks
 * We appreciate Prof. [Brendan Englot](https://scholar.google.com/citations?user=Nd6tX_kAAAAJ&hl=ko)'s RobustFieldAutonomyLab, particularly [Yewei Huang](https://scholar.google.com/citations?user=8g3U_tkAAAAJ&hl=ko&oi=sra), for publishing the DiSCo-SLAM.
